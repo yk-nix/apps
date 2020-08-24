@@ -1,1 +1,8 @@
-aclocal ---> autoscan ---> autoheader --->autoconf ---> automake
+# aclocal ---> autoscan ---> autoheader --->autoconf ---> automake ---> ./config ---> make
+# Before do 'make', you must download yk-nix/yklib into your local host; then change the symbol-link file of 'lib'
+# to point to that directory. 
+    git clone https://github.com/yk-nix/yklib.git  [yklib-directory]
+    cd port-scanner
+    rm lib
+    ln -s yklib-directory lib
+    
