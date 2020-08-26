@@ -1,0 +1,1 @@
+aclocal ---> autoscan ---> autoheader --->autoconf ---> automake
